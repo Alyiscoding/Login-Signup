@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        .input-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center items vertically */
+            /* gap: 0.5rem; */
+            
+        }
+
+        .input-group-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center the icon */
+        }
+
+        .form-control {
+            height: 2.5rem;
+            /* Adjust height as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="margin-bottom: 40px;">
+        <div class="container-fluid">
+            <img src="./UMT png.png" height="40" style="gap: 20px; margin-top: 10px; margin-right: 20px;" width="40"
+                alt="">
+            <a class="navbar-brand" href="#">UNIVERSITY OF MANAGEMENT AND TECHNOLOGY</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="container mt-5 pt-5">
+        <h1>Sign Up</h1>
+        <hr>
+        <form class="form-grid">
+            <div class="form-section">
+                <label for="first-name">First Name <span>*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="text" id="first-name" name="first-name" class="form-control" required>
+                </div>
+
+                <label for="middle-name">Middle Name:</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="text" id="middle-name" name="middle-name" class="form-control">
+                </div>
+
+                <label for="last-name">Last Name <span>*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="text" id="last-name" name="last-name" class="form-control" required>
+                </div>
+
+                <label for="gender">Gender <span>*</span></label>
+                <select id="gender" name="gender" class="form-select" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="country">Country <span>*</span></label>
+                <select id="country" name="country" class="form-select" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="email">Email <span>*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <label for="phone-number">Phone Number:</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                    <input type="tel" id="phone-number" name="phone-number" class="form-control">
+                </div>
+
+                <label for="personal-phone">Personal Phone Number <span>*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+                    <input type="tel" id="personal-phone" name="personal-phone" class="form-control" required>
+                </div>
+
+                <label for="cnic">CNIC <span>*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+                    <input type="text" id="cnic" name="cnic" class="form-control" required>
+                </div>
+                <div class="recaptcha">
+                    <!-- <label for="captcha">Captcha Verification Code:</label> -->
+                    <input type="text" id="captcha" name="captcha" placeholder="Enter Code" style="width: 50%; "
+                        class="form-control">
+                    <label for="">82U4X</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-[#0056b3] mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- University Name -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">University of Management and Technology</h5>
+                    <p class="para">Leading the way in innovative education and research.</p>
+                </div>
+
+                <!-- Study at UMT -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Study at UMT</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">> Undergarduate</a></li>
+                        <li><a href="#">> Graduate</a></li>
+                        <li><a href="#">> Ms/Mphill</a></li>
+                        <li><a href="#">> PHD Program</a></li>
+                        <li><a href="#">> Apply Online</a></li>
+                    </ul>
+                </div>
+
+                <!-- About UMT -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">About the University</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">> UMT Glance</a></li>
+                        <li><a href="#">> Accrediations</a></li>
+                        <li><a href="#">> Membership</a></li>
+                        <li><a href="#">> Giving to UMT</a></li>
+                        <li><a href="#">> Life at UMT</a></li>
+                        <li><a href="#">> News</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">> Library</a></li>
+                        <li><a href="#">> IPC</a></li>
+                        <li><a href="#">> UMT Student Housing</a></li>
+                        <li><a href="#">> Medical</a></li>
+                        <li><a href="#">> Souvenir Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title">Jin us online</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center"> Powered by Office of Technology Enablement</p>
+            <p class="text-center"> feel free to contact us for any question</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMF3G8UYA6A7rQRnMOFQwBSrNH3aR9AB12RzY3Dg2RwrrN8e19PRAH24aow"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
